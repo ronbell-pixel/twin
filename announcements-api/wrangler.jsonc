@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "twin-chimneys-announcements",
+  "main": "src/index.js",
+  "compatibility_date": "2026-07-14",
+  "observability": { "enabled": true },
+  "kv_namespaces": [
+    { "binding": "ANNOUNCEMENTS", "id": "a1d6fc78206346bf8db97ced2e6c04d1" }
+  ],
+  "vars": {
+    // Sites allowed to call this API from the browser (comma-separated). localhost is always allowed.
+    "ALLOWED_ORIGINS": "https://new.twin-chimneys.org,https://twin-chimneys.org,https://www.twin-chimneys.org"
+  }
+}
